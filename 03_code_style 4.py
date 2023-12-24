@@ -14,7 +14,8 @@ print('Результат', z)
 
 # ср. с С++
 
-# if (x < 0) { printf('Меньше нуля\n'); z = x**2 + y; } else { printf('Больше нуля\n'); z = x - y; } printf('Получается\n', z)
+# if (x < 0) { printf('Меньше нуля\n'); z = x**2 + y; }
+# else { printf('Больше нуля\n'); z = x - y; } printf('Получается\n', z)
 
 # вложенные блоки кода
 
@@ -112,12 +113,12 @@ MyFavoritePetsAndBirds = ['cat', 'wolf', 'ostrich']
 #   x y z - для координат
 
 # никогда не используйте в названиях переменных одиночные l, I, O  !
-l = 34
-I = 43
-if l > I:
+law = 34
+iowa = 43
+if law > iowa:
     print()
-O = 9
-if O > 0:
+omaha = 9
+if omaha > 0:
     print()
 
 # lowercase (слово в нижнем регистре)
