@@ -1,11 +1,19 @@
-def test():
-    a = 5
-    b = 10
-    print(a, b)
+def test_zap(a, b, c=100, *args, **kwargs):
+    print(test_zap)
+    for i in list(args):
+        print('переменные списка:', i)
+    for key in dict(kwargs):
+        print('dictionary', key)
 
-test()
 
-def test2(a=6, b=11, c=30):
-    print(a, b, c)
+test_zap(3, 6, 55, 77, 55, key='fff', door='дверь')
 
-test2()
+
+def fact(n):
+    if n == 1:
+        return 1
+    less_fact = fact(n=n - 1)
+    return n * less_fact
+
+
+print(fact(11))
