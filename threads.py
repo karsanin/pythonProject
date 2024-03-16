@@ -12,10 +12,10 @@ def perebor(lst, t):
         time.sleep(t)
 
 
-thread1 = Thread(target=perebor, kwargs=dict(lst=spisok_numb, t=1))
+thread1 = Thread(target=perebor, kwargs=dict(lst=spisok_numb, t=0.75))
 thread1.start()
+time.sleep(0.5)
+perebor(lst=spisok_lett, t=0.75)
 
-perebor(lst=spisok_lett, t=1)
 
 
-thread1.join()
